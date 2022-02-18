@@ -104,7 +104,7 @@
       height: fit-content
       width: 100%
       border-top: 3px solid $blueLightHex
-      max-width: 27vh
+      max-width: 41vh
     @media all and (max-width: 767px)
       position: absolute
       bottom: -284px

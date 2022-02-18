@@ -70,7 +70,7 @@ export default {
   #sectionHero
     position: relative
     @media all and (max-width: 767px)
-      margin-bottom: 25vh
+      margin-bottom: 36vh
     .bg-pleca-blue
       position: absolute
       background-color: $blueLightHex

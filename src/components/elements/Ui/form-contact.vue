@@ -179,6 +179,8 @@ export default {
   position: absolute
 .body--wrap .multiselect .multiselect__single
   display: block !important
+  @media all and (max-width: 991px)
+    font-size: .8em
 </styled>
 <style lang="sass" scoped>
   @import "../../../scss/utilities/variables"
@@ -266,4 +268,6 @@ export default {
       border: 1px solid #e8e8e8
       background: #fff
       font-size: 14px
+      @media all and (max-width: 991px)
+        font-size: .8em
 </style>
