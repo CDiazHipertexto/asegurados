@@ -1,19 +1,27 @@
 # Asegurados
 Prueba técnica/Proceso de selección Exsis-Ilumno
-## Folder
+
+# Pasos para correr el proyecto local
+
+## 1 Clonar
+```
+git clone https://github.com/CDiazHipertexto/asegurados.git
+```
+## 2 entrar a la carpeta
 ```
 cd asegurados
 ```
 
-## Project setup
+## 3 configuración del proyecto
 ```
 npm install
 ```
-### Compiles and hot-reloads for development
+## 4 Compila y recarga en caliente para el desarrollo
 ```
 npm run dev
 ```
 
+## Se desarrollo con
 ```
 ### Proyecto con VUE, sintaxis PUG, S(A/C)SS, JavaScript
 
