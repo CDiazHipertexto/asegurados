@@ -45,7 +45,17 @@
       b-row
         b-col(sm='12', md='12', lg='12', xl='12', cols='12').pr
           a(@click.prevent='toPay').btn.btn--green.btn-primary Cotizar ahora
-
+          div(v-if="msgErrr" )
+            | Debes llenar todos los campos
+    div
+      b-modal(v-model="modalShow")
+        p.my-4 Gracias, tus datos ingresados fueron:
+        ul
+          li {{ auto_type.language }}
+          li {{ model_type.language }}
+          li {{ year_type.language }}
+          li {{ user_email }}
+          li {{ user_mobile }}
 </template>
 
 <script>
@@ -56,6 +66,8 @@ export default {
   components: { },
   data() {
     return {
+      modalShow: false,
+      msgErrr: false,
       value: null,
       options: ['list', 'of', 'options'],
       auto_type: null,
@@ -108,6 +120,12 @@ export default {
       if (this.user_mobile === null) {
         this.user_mobile = ''
       }
+      if (this.autoTypeValid && this.autoModelValid && this.autoYearValid && this.emailValid && this.mobileValid) {
+        this.modalShow = true
+      } else {
+        this.msgErrr = true
+      }
+
     },
     validateFields ( value, type ) {
       let result = true;

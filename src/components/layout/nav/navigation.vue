@@ -76,7 +76,7 @@
             }
         },
         methods: {
-            toggleNavClass(){
+              toggleNavClass(){
                 if(this.active == false){
                     return 'nav'
                 } else {
@@ -203,7 +203,7 @@
         width: 100%
         position: fixed
         top: 0
-        z-index: 9999
+        z-index: 9
         background: #4D4D4D
         padding-top: 0
         padding-bottom: 0

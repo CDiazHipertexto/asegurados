@@ -38,7 +38,7 @@
                             p Instragram
     b-container(fluid="").bg-black.subFooter.py-3
       section
-        p Copyright 2022
+        p #{(new Date().getFullYear())}
 
 
 </template>
