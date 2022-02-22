@@ -51,9 +51,9 @@
       b-modal(v-model="modalShow")
         p.my-4 Gracias, tus datos ingresados fueron:
         ul
-          li {{ auto_type.language }}
-          li {{ model_type.language }}
-          li {{ year_type.language }}
+          li {{ auto_type }}
+          li {{ model_type }}
+          li {{ year_type }}
           li {{ user_email }}
           li {{ user_mobile }}
 </template>
